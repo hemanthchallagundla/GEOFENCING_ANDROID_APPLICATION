@@ -3,7 +3,6 @@ package com.example.login.ui.setg;
 import android.Manifest;
 import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
@@ -24,33 +23,19 @@ import com.example.login.R;
 import com.example.login.databinding.FragmentSetgBinding;
 import com.example.login.ui.GeofenceHelper;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.Result;
 import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingClient;
-import com.google.android.gms.location.GeofencingEvent;
 import com.google.android.gms.location.GeofencingRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
-import static android.content.ContentValues.TAG;
 
 public class SetgFragment extends Fragment implements GoogleMap.OnMapLongClickListener, OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ResultCallback {
@@ -162,11 +147,11 @@ public class SetgFragment extends Fragment implements GoogleMap.OnMapLongClickLi
         // Get the context from the View parameter
         Context context = binding.getRoot().getContext();
         // Check if the current location is inside the geofence
-        testGeofence(context);
+        testGeofence();
     }
 
     // Change the method signature to accept Context as a parameter
-    private void testGeofence(Context context) {
+    public void testGeofence() {
         if (ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             Location lastKnownLocation = myMap.getMyLocation();
             if (lastKnownLocation != null) {
