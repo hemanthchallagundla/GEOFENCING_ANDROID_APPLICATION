@@ -1,1 +1,2 @@
+# GEOFENCING_ANDROID_APPLICATION
 This project is an Android application that utilizes geofencing to provide location-based notifications to users. The app integrates with Google Maps to allow users to set geofences by long-clicking on the map. When a user enters a predefined geofence area, the app fetches and displays relevant news notifications. Firebase is used for user authentication and real-time database storage of geofences.
