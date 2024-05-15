@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Welcome</string>
+    <string name="nav_header_subtitle">Welcome,User</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_setg">Set Geofence</string>
+    <string name="menu_updateg">Update Geofence</string>
+    <string name="menu_viewg">View Geofence</string>
+    <string name="menu_notification">Notification Settings</string>
+    <string name="default_web_client_id">783966265601-mrc0nmno16iqnkrlg5c8c3asd6bq97os.apps.googleusercontent.com</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="my_map_api_key">USE YOUR GOOGLE MAPS API KEY</string>
+</resources>

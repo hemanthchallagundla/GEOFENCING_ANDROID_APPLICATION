@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Geofence icon -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,2C7.03,2 3,6.03 3,11C3,14.61 5.61,17.5 8.75,18.65L12,22L15.25,18.65C18.39,17.5 21,14.61 21,11C21,6.03 16.97,2 12,2zM12,16C10.34,16 9,14.66 9,13C9,11.34 10.34,10 12,10C13.66,10 15,11.34 15,13C15,14.66 13.66,16 12,16z"/>
+</vector>
